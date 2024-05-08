@@ -1,0 +1,81 @@
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  margin: 0;
+  background: #5f1212; /* Changer la couleur du fond en bleu */
+  min-height: 100vh;
+  position: relative; /* Ajout pour positionner l'avatar absolument par rapport au body */
+}
+
+/* Header & Navigation styles */
+header {
+  padding: 10px 0px;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #919090;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  text-align: left; /* Modifier le texte à gauche */
+  max-width: 50%; /* Limiter la largeur du texte */
+}
+
+h1 {
+  font-size: 3em; /* Réduire la taille des titres */
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 2em; /* Réduire la taille du texte */
+  font-weight: 100;
+  color: rgb(163, 163, 163);
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 48px;
+  display: flex; /* Ajout pour aligner l'avatar avec le texte */
+  justify-content: flex-start; /* Ajout pour aligner l'avatar avec le texte */
+  align-items: center; /* Ajout pour aligner l'avatar avec le texte */
+}
+
+.gradient-text {
+  background-image: linear-gradient(-45deg, rgb(177, 8, 189), rgb(88, 186, 255));
+  background-clip: text;
+  color: transparent;
+}
+
+#avatar-container {
+  position: absolute; /* Positionner l'avatar absolument */
+  top: 1; /* En haut de la page */
+  right: 0; /* À l'extrémité droite */
+  height: 300px; /* Taille de l'avatar */
+  margin: 20px; /* Marge autour de l'avatar */
+}
+
+#avatar-loading {
+  font-size: 2em; /* Réduire la taille de la police du chargement de l'avatar */
+}
